@@ -8,7 +8,8 @@
  *
  * @argc:  number count of command line arguments
  * @argv: name of the text file
- * @return: Always 0
+ * 
+ * Return: Always 0
  */
 
 int main(int argc, char *argv[])
@@ -21,7 +22,7 @@ int num;
 char *filename = argv[1];
 
 fptr = fopen(filename, "r");
-while(!feof(fptr))
+while (!feof(fptr))
 {
 fscanf(fptr, "%lli", &x);
 numberline[k] = x;
