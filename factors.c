@@ -3,23 +3,23 @@
 #include <stdlib.h>
 
 /**
- * @brief 
+ * main - this is program that computes the next smallest divisors of prime factors
  * 
+ * @argc -  number count of command line arguments
+ * @argv - name of the text file
+ * @Return: Always 0 
  */
-
 
 int main(int argc, char *argv[])
 {
-
-int val;
+long long x;
 int k=0;
 FILE *fptr;
-int numberline[150];
+long long int numberline[150];
 int num;
 char *filename = argv[1];
-fptr = fopen(filename,"r");
-int x;
 
+fptr = fopen(filename,"r");
 while(!feof(fptr))
 {
 fscanf(fptr,"%d",&x);
@@ -27,8 +27,7 @@ numberline[k] = x;
 k++;
 }
 int i = 2;
-int n;
-
+long long int n;
 
 for(int j = 0;j < k; j++)
 {
@@ -45,7 +44,7 @@ while (i < n)
     }
 }
 printf("%d=%d*%d \n",numberline[j],n , i);
-
 }
+return (0);
 }
 
