@@ -2,6 +2,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - This is the beginning of the program 
+ * 
+ * @argc: count of the command line arguments
+ * @argv: name of the text file
+ * 
+ * @Return: Always 0
+ */
+
 int main(int argc, char *argv[])
 {
 long long int n;
