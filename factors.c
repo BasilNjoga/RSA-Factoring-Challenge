@@ -46,8 +46,8 @@ for (int j = 0; j < k; j++)
                         i++;
                     }
             }
-printf("%llu=%llu*%llu\n", numberline[j], n, i);
-}
+    printf("%llu=%llu*%llu\n", numberline[j], n, i);
+    }
 return (0);
 }
 
