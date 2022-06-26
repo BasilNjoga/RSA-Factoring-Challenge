@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 /**
- * main - this is program that computes the next 
+ * main - this is program that computes the next
  * smallest divisors of prime factors
  *
- * @argc -  number count of command line arguments
- * @argv - name of the text file
- * @Return: Always 0 
+ * @argc:  number count of command line arguments
+ * @argv: name of the text file
+ * @return: Always 0
  */
 
 int main(int argc, char *argv[])
