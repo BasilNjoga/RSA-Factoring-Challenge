@@ -2,17 +2,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * @brief 
- * 
- */
-
-
 int main(int argc, char *argv[])
 {
-int n = 6;
-int i = 2;
-int new = 0;
+long long int n;
+long long int val;
+FILE *fptr;
+char *filename = argv[1];
+
+fptr = fopen("newtest.txt","r");
+fscanf(fptr, "%lli", &val);
+n = val;
+fclose(fptr);
+
+long long i = 2;
+long long int new = 0;
 while (i < n)
 {
     if (n % i == 0)
@@ -33,7 +36,7 @@ while (i < n)
     }
 
 }
-printf("%d*%d \n",n , i);
+printf("%lli=%lli*%d \n",n,new , i);
 
 }
 
