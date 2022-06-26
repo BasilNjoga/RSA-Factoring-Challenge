@@ -8,7 +8,7 @@
  *
  * @argc:  number count of command line arguments
  * @argv: name of the text file
- * 
+ *
  * Return: Always 0
  */
 
@@ -31,21 +31,21 @@ k++;
 unsigned long long i = 2;
 unsigned long long n;
 
-for(int j = 0; j < k; j++)
-{
-    n = numberline[j];
-    while (i < n)
+for (int j = 0; j < k; j++)
     {
-        if (n % i == 0)
-        { 
-        n = n / i;
-        break;
-        }
-        else
+        n = numberline[j];
+        while (i < n)
         {
-        i++;
-        }
-}
+            if (n % i == 0)
+            { 
+            n = n / i;
+            break;
+            }
+            else
+            {
+            i++;
+            }
+    }
 printf("%llu=%llu*%llu\n", numberline[j], n, i);
 }
 return (0);
