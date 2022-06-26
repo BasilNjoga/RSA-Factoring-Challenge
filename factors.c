@@ -37,14 +37,14 @@ for (int j = 0; j < k; j++)
         while (i < n)
             {
                 if (n % i == 0)
-                {
-                    n = n / i;
-                    break;
-                }
+                    {
+                        n = n / i;
+                        break;
+                    }
                 else
-                {
-                i++;
-                }
+                    {
+                        i++;
+                    }
             }
 printf("%llu=%llu*%llu\n", numberline[j], n, i);
 }
