@@ -8,7 +8,7 @@
  */
 
 
-int main(int argc, char *argv )
+int main(int argc, char *argv[])
 {
 
 int val;
@@ -16,7 +16,7 @@ int k=0;
 FILE *fptr;
 int numberline[150];
 int num;
-char * filename = &argv[1];
+char *filename = argv[1];
 fptr = fopen(filename,"r");
 int x;
 

@@ -1,2 +1,0 @@
-#!/bin/bash
-gcc factor.c test.txt
