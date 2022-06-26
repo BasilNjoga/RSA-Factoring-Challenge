@@ -22,11 +22,11 @@ char *filename = argv[1];
 fptr = fopen(filename,"r");
 while(!feof(fptr))
 {
-fscanf(fptr,"%d",&x);
+fscanf(fptr,"%lli",&x);
 numberline[k] = x;
 k++;
 }
-int i = 2;
+long long int i = 2;
 long long int n;
 
 for(int j = 0;j < k; j++)
@@ -43,7 +43,7 @@ while (i < n)
         i++;
     }
 }
-printf("%d=%d*%d \n",numberline[j],n , i);
+printf("%lli=%lli*%lli\n",numberline[j],n , i);
 }
 return (0);
 }
