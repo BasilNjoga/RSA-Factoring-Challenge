@@ -24,29 +24,29 @@ char *filename = argv[1];
 fptr = fopen(filename, "r");
 while (!feof(fptr))
 {
-		fscanf(fptr, "%lli", &x);
-		numberline[k] = x;
-		k++;
+	fscanf(fptr, "%lli", &x);
+	numberline[k] = x;
+	k++;
 }
 unsigned long long i = 2;
 unsigned long long n;
 
 for (int j = 0; j < k; j++)
 {
-		n = numberline[j];
-		while (i < n)
+	n = numberline[j];
+	while (i < n)
+	{
+		if (n % i == 0)
 		{
-			if (n % i == 0)
-			{
-				n = n / i;
-				break;
-			}
-			else
-			{
-				i++;
-			}
+			n = n / i;
+			break;
 		}
-		printf("%llu=%llu*%llu\n", numberline[j], n, i);
+		else
+		{
+			i++;
+		}
+	}
+	printf("%llu=%llu*%llu\n", numberline[j], n, i);
 }
 return (0);
 }
