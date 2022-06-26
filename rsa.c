@@ -36,7 +36,7 @@ while (i < n)
     }
 
 }
-printf("%lli=%lli*%d \n",n,new , i);
+printf("%lli=%lli*%lli \n",n,new , i);
 
 }
 
