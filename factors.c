@@ -32,19 +32,20 @@ unsigned long long n;
 
 for(int j = 0; j < k; j++)
 {
-n = numberline[j];
-while (i < n)
-{
-    if (n % i == 0)
-       { n = n / i;
-        break;
-       }
-    else
+    n = numberline[j];
+    while (i < n)
     {
+        if (n % i == 0)
+        { 
+        n = n / i;
+        break;
+        }
+        else
+        {
         i++;
-    }
+        }
 }
-printf("%llu=%llu*%llu\n",numberline[j], n , i);
+printf("%llu=%llu*%llu\n", numberline[j], n, i);
 }
 return (0);
 }
