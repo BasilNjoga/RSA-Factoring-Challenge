@@ -9,7 +9,7 @@ long long int val;
 FILE *fptr;
 char *filename = argv[1];
 
-fptr = fopen("newtest.txt","r");
+fptr = fopen(filename,"r");
 fscanf(fptr, "%lli", &val);
 n = val;
 fclose(fptr);
